@@ -72,7 +72,7 @@ def self.new_from_db(row)
   Dog.new(id, name, breed)
   dog_hash[:dog.id]=row[0],
   dog_hash[:dog.name]=row[1],
-  dog_hash[:dog.breed]=row[2]}
+  dog_hash[:dog.breed]=row[2]
   dog_hash
 end
 
