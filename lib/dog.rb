@@ -68,11 +68,11 @@ def self.find_or_create_by(name:, breed:)
 end
 
 def self.new_from_db(row)
+  dog=Dog.new(id, name, breed)
   id=row[0]
   name=row[1]
   breed=row[2]
   binding.pry
-  dog=Dog.new(id, name, breed)
   dog
 end
 
