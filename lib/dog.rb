@@ -72,6 +72,7 @@ def self.new_from_db(row)
   :dog.name => row[1],
   :dog.breed => row[2]}
   self.new(dog_hash)
+  binding.pry
 end
 
 def self.find_by_name(name)
