@@ -68,7 +68,6 @@ end
 
 def self.new_from_db(row)
   dog=Dog.new(id, name, breed)
-  binding.pry
   dog.id=row[0]
   dog.name=row[1]
   dog.breed=row[2]
